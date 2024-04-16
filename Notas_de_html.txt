@@ -1,0 +1,18 @@
+-- El enlace es la manera en la que se hubian las cosas en la web (cargadas en un servidor)
+-- Todo sistema funciona como solicitud respuesta (al menos la mayoria)
+-- Las paginas en si estan en codigo HTML 
+-- Una pagina se abre con un vagedaor (el tipo de programa que lee el archivo)
+
+What is HTML and CSS?
+Mark-up language
+Take text to be interpreted by a browser
+It is a interpreted language: the code is being runed in real time
+*Estructure*- Any element is information for the block 
+All in HTML is an element - every single detail - you create a tag for it 
+Elements - have attributes ad if you do not change them it will the attribute by default (change it with CSS).
+HTML - Estructure - tags a Elements
+CSS - Style - declarations blocks - single declarations
+
+Logica de etiquetas padres e hijos
+Pagina = archivos
+Sitio = Varios archivos osea varias paginas
