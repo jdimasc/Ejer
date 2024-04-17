@@ -16,3 +16,5 @@ CSS - Style - declarations blocks - single declarations
 Logica de etiquetas padres e hijos
 Pagina = archivos
 Sitio = Varios archivos osea varias paginas
+
+The objects after CSS should look as the object they are
