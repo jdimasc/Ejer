@@ -1,0 +1,72 @@
+/* Mejor usar la manera de link para estilizar los elementos de HTML */
+/* La sintaxis general es 
+p { Selector 
+    Declaraciones
+    } Todo junto forma un bloque de declaraciones
+*/
+
+/* Selectores*/
+/* Por elementos, todos los p tendra estas propiedades */
+p { 
+    color: red;
+}
+/* Por clases, los elementos que tengan este atributo con el nombre tendran las propiedades */
+/* En HTML <h1 class="titulo_rojo"> </h1>, tambien se puede usar <span> */
+.titulo_rojo{
+    color: purple;
+}
+/* ID, solo se le puede dar a un elemento en toda la pagina (por buena practica ademas de java script)*/
+/* En HTML <li id="luna"></li> */
+#luna{
+    color: orange;
+}
+
+/* Propieades de texto */
+/* Cambiar el color de la letra "relativo al navegador" */
+p{
+    color: burlywood;
+}
+/* Cambiar la fuente, se le puede poner varias tipografias separadas por comas en caso de que primera no funcione o no sea apta para el navegador */
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Cambiar el tamaño de la letra*/
+p{
+    font-size: 23px;
+}
+/* Cambiar el grosor  de la letra, en este caso en negrita, se puede usar bolder o el valor numerico, recordar la <strong> de HTML para semantica*/
+p{
+    font-weight: bold, bolder;
+}
+/* El estilo de la fuente: italic, normal, oblique (parecido a la italica), se puede definir que tanto se quiere inclinar la letra */
+p{
+    font-style: italic, oblique;
+}
+/* Al lado que se alinea el texto dentro de su contenedor, si el contenedor tienen el mismo tamaño que el texto, no cambia nada */
+p{
+    text-align: right, left, center, justify, start,end;
+}
+/* Lineas en el texto, subrayado y se pueden mezclar los subrayados quitando la coma*/
+p{
+    text-decoration: underline, overline, line-through;
+}
+/* Espaciado de los reglones (1.4 px)*/
+p{
+    line-height: none;
+}
+/* Espaciado de las letras */
+p{
+    letter-spacing: normal;
+}
+/* Transformar texto, mayuscula minuscula o la primera de cada palabra en mayuscula */
+p{
+    text-transform: uppercase, lowercase, capitalize;
+}
+
+/* Tipografias externas */
+/* Descargar de google fonts, copias el link en el HTML y lo cambias en la propiedad de font family */
+/* Crear la tipografia en una hoja de CSS, video primera parte CSS */
+
+/* Box model */
+/* Describir como se diseñan los elementos, todo se concidera una caja */
+/*  */

@@ -1,0 +1,4 @@
+--Hojas de estilo en cascada
+--Selecionar elementos de HTML y los para  estilizarlos
+--Tambien importa la relacion de los elemtnos (padres, hijos) y hermanos. Saber combinarlos
+--CSS maneja propiedades no atrubutos, estos ultimos son para HTML
