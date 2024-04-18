@@ -1,0 +1,29 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: blueviolet;
+
+}
+div{
+    background-color: powderblue;
+    width: 50%;
+    padding: 5px;
+    text-align: justify;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    padding: none;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 6px;
+}
+
+h3{
+    text-align: center;
+    font-size: 18px;
+}

@@ -4,6 +4,7 @@ p { Selector
     Declaraciones
     } Todo junto forma un bloque de declaraciones
 */
+/* Siempre se le puede hacer modificaciones completas al body */
 
 /* Selectores*/
 /* Por elementos, todos los p tendra estas propiedades */
@@ -11,7 +12,7 @@ p {
     color: red;
 }
 /* Por clases, los elementos que tengan este atributo con el nombre tendran las propiedades */
-/* En HTML <h1 class="titulo_rojo"> </h1>, tambien se puede usar <span> */
+/* En HTML <h1 class="titulo_rojo otra clase"> </h1>, tambien se puede usar <span> (un elemento puede tener dos clases)*/
 .titulo_rojo{
     color: purple;
 }
@@ -69,4 +70,31 @@ p{
 
 /* Box model */
 /* Describir como se diseñan los elementos, todo se concidera una caja */
-/*  */
+/* Cada elemento en HTML es una caja que tiene 3 partes contenido (area del texto, imagenes, etc) padding (espacio de borde y contenido, relleno) y border (borde de la pagina), tambien esta el margen que es la distancia de una caja a otra caj pero, no hace parte de a caja en si */
+
+
+/* Width y Height */
+/* La anchura y el alto de la caja (de cualquiera, formularios, botones, textos, etc), siempre funcionan las dos, no hay altura sin anchura y al contrario */
+/* Cuidado con las cajas contenedoras, porque la grande sera el marco de referencia de la pequeña */
+/* Las medidas tambien se pueden dar en porcentajes */
+div {
+    width: 20px;
+    height: 20px;
+}
+/* Margin y padding */
+/* Padding - espacio del contendo y borde de una pagina, los elementos dentro de otros elementos son lementos del elemento grande y toman como referencia la caja del grande*/
+/* No cambia el contenido de las cajas */ 
+.nombre_clase_por_ejemplo {
+    padding: 10px;
+} /* Se puede escribir de varias maneras para especificar los lados a los que modifico el padding (1 valor, todos los lados ; 4 valores, todos los lados en el sentido de las manesillas del reloj y 2 valores horizontal y vertical)*/
+/* Margin -  espacio de separacion entre cajas y los elementos dentro de las mismas cajas, no forma parte de la caja*/ 
+/* Los margenes se superponen y se queda el mayor margen */
+.nombre_clase_por_ejemplo{
+    margin: 76px;
+} /* Se le puede poner margen al body entero del HTML*/ 
+/* centrar el horizontal de los elementos */
+.nombre_clase_por_ejemplo{
+    margin: auto;
+}
+
+/* Bordes */
