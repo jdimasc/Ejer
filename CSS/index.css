@@ -12,7 +12,7 @@ p {
     color: red;
 }
 /* Por clases, los elementos que tengan este atributo con el nombre tendran las propiedades */
-/* En HTML <h1 class="titulo_rojo otra clase"> </h1>, tambien se puede usar <span> (un elemento puede tener dos clases)*/
+/* En HTML <h1 class="titulo_rojo otra clase"> </h1>, tambien se puede usar <span> (un elemento puede tener dos clases que se separan por espacio)*/
 .titulo_rojo{
     color: purple;
 }
@@ -98,3 +98,103 @@ div {
 }
 
 /* Bordes */
+/* Se puede modificar tamaño (grosor), estilo, color y bordes del borde (esquinas) (se puede dar en px o porcentaje, pero en porcentaje no solo afecta las esquinas, tambien el resto de la caja)*/
+/* Personalizar imputs */
+.nombre_clase_por_ejemplo{
+    border-width: 50px;
+    border-style: solid;
+    border-color: orange;
+    border:width style color;
+    border-radius: 5px;
+    border-top-right-radius: 60px;
+}
+/* Tambien se puede escoger a que borde de la caja se puede afectar: border-top border-left etc.. */
+/* Lo mismo con las esquinas border-raidus-top etc .. */
+
+/* Box Sizing*/
+/* Para modificar la manera en la que la caja interactura de manera predeterminada, el contenido, el padding, el borde y la margen */
+/* Se tienen dos metodos prinicpales para esto */
+/* Content box (predeterminada): si yo fijo las medidas de la caja con width y height solo lo hago respecto al contenido, y a mendida que pongo margen, padding  y borde, se hace mas grande*/
+.nombre_clase_por_ejemplo{
+    width: 10px;
+    height: 30px;
+}
+/* Border box: Se da respecto al borde de a caja, con un tamaño fijo (el contenido se ajusta al tamaño que se le diga)*/
+.nombre_clase_por_ejemplo{
+    width: 60px;
+    height: 50px ;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+
+
+/* Colores (3 maneras)*/
+/* RGB: Convinaciones del rojo, verde y azul (valores de 0-255)*/
+.nombre_clase_por_ejemplo{
+    background: rgb(red, green, blue);
+}
+/*RGBA: Convinaciones del rojo, verde, azul y la transparecncia de todo */
+.nombre_clase_por_ejemplo{
+    background: rgba(red, green, blue, alpha);
+}
+/* Hexadecimal: existe :) */
+/* hsl: con grados del circulo */
+/* Siempre estan las paginas */ 
+
+
+/* Unidades de medida */
+/* No todo se mide con pixeles */
+/* Unidades absolutas: Cuando se tiene que tener control del tamaño estrictamente
+(Los cm y los mm sirven mas que todo cuando se imprime y se suelen usar para cosas que se imprimen) (Los pixeles son medidas absolutas pero no fiicas) */
+.nombre_clase_por_ejemplo{
+    padding: 10px;
+    padding: 10cm;
+    padding: 10mm;
+}
+/* Unidades relativas: El valor depende de otro valor 
+(Un valor que depende del tamaño de la caja que lo contiene, o de la letra, etc..) 
+(El porcentaje siempre se da de acuerdo al contenedor que lo contiene)
+(Si doy un font-size en porceaje, se da de acuerdo al font-size de la caja contenedora, de la misma manera para las margenes, aun asi casi no se usa xd)*/
+.nombre_clase_por_ejemplo{
+    padding: 10%;
+}
+/* El em le pregunta al elemento padre cual es el tamaño de la letra (15px) y la multiplica por el numero que se le de (1em) para el elemento hijo (en este caso, el hijo esta contenido en el padre, si el padre no tiene tamño definido, busca al elemento mas padre y sigue buscando) */
+.elemento_padre{
+    font-size: 15px;
+}
+.elemento_hijo{
+    font-size: 1em;
+}
+/* El rem no busca a elemento padre, busca al elmento raz (la matematica es igual que en em)(por defecto el font-size de html es 14px)*/
+html{
+    font-size: 15px;
+}
+p{
+    font-size: 4rem;
+}
+/* view port */
+/* Toman como referencia toda la vista disponible de la ventana 
+En este caso toman el 50% de altura y anchura para definir cuanto espacio va a ocupar y tambien se puede usar para definir margenes
+*/
+h1{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10vh;
+}
+/* vmax y vmin */
+/* El vmax se define a partir del mas grande entre width y height, si el height es mas grande, entonces este es vmax (1vamx = 1hv) y width es vmin (1vmin = 1vw) */
+h2{
+    width: 4vmax;
+}
+/* Cuando usar cada uno: 
+Fuentes, espaciado y tipografia - em y rem
+Dimensiones de elementos - %, px, vw, wh */
+
+/* Fondos */
+/* Bacground es un short hand, pero se le puede explotar mas */
+body{
+    background-color: cadetblue;
+    background-image: url("");
+    
+}

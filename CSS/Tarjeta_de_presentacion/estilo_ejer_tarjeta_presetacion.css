@@ -9,6 +9,10 @@ div{
     padding: 5px;
     text-align: justify;
     margin: auto;
+    border-width: 2px ;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
 }
 
 h1{
